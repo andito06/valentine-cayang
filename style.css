@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fdf6f9, #f8e8ee);
+  text-align: center;
+  color: #5c4b51;
+}
+
+.scene {
+  display: none;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.active {
+  display: block;
+  animation: fadeIn 1.5s;
+}
+
+button {
+  padding: 12px 25px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  background: #e7b9c4;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d89aaa;
+}
+
+.slideshow img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.anniversary {
+  margin: 30px 0;
+}
+
+.counter {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.counter span {
+  font-size: 30px;
+  color: #c07a8c;
+}
+
+.loveLine {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+#romanticText {
+  margin-top: 20px;
+  font-size: 18px;
+  min-height: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.finalText {
+  margin-top: 30px;
+  font-size: 28px;
+  opacity: 0;
+  animation: fadeInSlow 3s forwards;
+}
+
+.finalParagraph {
+  margin-top: 15px;
+  font-size: 18px;
+  opacity: 0;
+  animation: fadeInSlow 4s forwards;
+}
+
+.delayText {
+  animation-delay: 2s;
+}
+
+.extraLdr {
+  margin-top: 20px;
+  font-size: 16px;
+  opacity: 0;
+  animation: fadeInSlow 6s forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeInSlow {
+  to {opacity: 1;}
+}
