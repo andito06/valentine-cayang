@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VALENTINE CAYANG 🤍</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="grain"></div>
+
+<section class="scene active" id="scene1">
+  <h1 class="fadeUp">Happy Valentine 🤍</h1>
+  <p class="fadeUp delay1">Acuu bikin cecuatuu buatt kamuu...</p>
+  <button class="fadeUp delay2" onclick="startLove()">Buka 🤍</button>
+</section>
+
+<section class="scene" id="scene2">
+  <h2>Kisah Kita 🤍</h2>
+
+  <div class="slideshow">
+    <img id="slideImage" src="foto1.jpg">
+  </div>
+
+  <div class="anniversary">
+    <p>Kita mulai sejak</p>
+    <h3 id="startDateText"></h3>
+
+    <div class="counter">
+      <span id="days">0</span> hari
+      <span id="hours">0</span> jam
+      <span id="minutes">0</span> menit
+    </div>
+  </div>
+
+  <p id="romanticText"></p>
+
+  <button onclick="nextScene()">Lanjut 🤍</button>
+</section>
+
+<section class="scene" id="scene3">
+  <h2>Nanti kalau cudah ndaak LDR, kita peyuuk yangg lamaa yaa cayangg? 🤍</h2>
+
+  <div class="buttons">
+    <button id="yesBtn">Iya 🤍</button>
+    <button id="noBtn">Engga 😌</button>
+  </div>
+
+  <p id="noText" class="noMessage"></p>
+
+  <div id="finalSection" class="hidden">
+    <h1 class="finalText">
+      Walaupun jarak misahin kitaa cekalaang...
+    </h1>
+
+    <p class="finalParagraph">
+      Acuu tetep miliih kamuu.  
+      Acuu tetep nungguu kamuu.  
+      Acuu tetep pelcayaa samaa kitaa.
+    </p>
+
+    <p class="finalParagraph delayText">
+      Suatu hari nantii, jarak inii cumaa jadii ceritaa.
+    </p>
+
+    <p class="extraLdr">
+      Acuu kangenn peyuuk kamuu cayaangg 🤍
+    </p>
+  </div>
+</section>
+
+<audio id="bgMusic" src="musik.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
