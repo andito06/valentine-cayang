@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VALENTINE CAYANG 🤍</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="grain"></div>
+
+<!-- Scene 1 -->
+<section class="scene active" id="scene1">
+  <h1 class="fadeUp">Happy Valentine 🤍</h1>
+  <p class="fadeUp delay1">Aku bikin sesuatu buat kamu...</p>
+  <button class="fadeUp delay2" onclick="startLove()">Buka 🤍</button>
+</section>
+
+<!-- Scene 2 -->
+<section class="scene" id="scene2">
+  <h2>Kisah Kita 🤍</h2>
+
+  <div class="slideshow">
+    <img id="slideImage" src="foto1.jpg">
+  </div>
+
+  <div class="anniversary">
+    <p>Kita mulai sejak</p>
+    <h3 id="startDateText"></h3>
+
+    <div class="counter">
+      <span id="days">0</span> hari
+      <span id="hours">0</span> jam
+      <span id="minutes">0</span> menit
+    </div>
+  </div>
+
+  <p id="romanticText"></p>
+
+  <button onclick="nextScene()">Lanjut 🤍</button>
+</section>
+
+<!-- Scene 3 -->
+<section class="scene" id="scene3">
+  <h2>Nantii kaloo cudaah ndaa LDR, kitaa peyuuk lamaa yaa cayaangg? 🤍</h2>
+
+  <div class="buttons">
+    <button id="yesBtn">Iya 🤍</button>
+    <button id="noBtn">Engga 😌</button>
+  </div>
+
+  <p id="noText" class="noMessage"></p>
+
+  <div id="loveNote" class="hidden">
+    <h2>Surat Untuk Kamu 🤍</h2>
+    <p>
+      Hai sayang…<br><br>
+      Acuuu cuma mau bilang kalau setiap hari aku bersyukur kamu ada di hidupku.  
+      Walaupun kita jauh dan kadang rindu bikin sedih, aku selalu ngerasa dekat sama kamu.  
+      Aku inget setiap momen kecil yang bikin kita ketawa, yang bikin kita makin sayang satu sama lain…<br><br>
+      Aku janji bakal tetap sabar, tetap sayang, dan terus nunggu sampai kita bisa ketemu lagi.  
+      Semoga kamu juga ngerasa nyaman dan tenang, karena aku selalu mikirin kamu.  
+      Aku sayang kamu selamanya, walaupun kita harus LDR sekarang… 🤍<br><br>
+      Dengan seluruh hatiku,<br>
+      Andito
+    </p>
+  </div>
+
+  <div id="finalSection" class="hidden">
+    <h1 class="finalText">
+      Walaupun jarak misahin kita sekarang...
+    </h1>
+
+    <p class="finalParagraph">
+      Acuu tetap milih kamu.  
+      Acuu tetap nunggu kamu.  
+      Acuu tetap percaya sama kita.
+    </p>
+
+    <p class="finalParagraph delayText">
+      Suatu hari nanti, jarak inii cumaa jadii ceritaa.
+    </p>
+
+    <p class="extraLdr">
+      Acuu kangen cekalii peyuuk kamu 🤍
+    </p>
+  </div>
+</section>
+
+<audio id="bgMusic" src="musik.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
